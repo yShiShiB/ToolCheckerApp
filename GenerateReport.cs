@@ -16,6 +16,11 @@ namespace ToolCheckerApp
         {
             InitializeComponent();
         }
-        
+
+        private void GenerateReport_Load(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
