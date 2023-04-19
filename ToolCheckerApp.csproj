@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,6 +71,12 @@
     </Compile>
     <Compile Include="CheckOutTool.Designer.cs">
       <DependentUpon>CheckOutTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empRpt.Designer.cs">
+      <DependentUpon>empRpt.cs</DependentUpon>
     </Compile>
     <Compile Include="EquipmentLauncher.cs">
       <SubType>Form</SubType>
@@ -120,11 +128,20 @@
     <Compile Include="RemoveUser.Designer.cs">
       <DependentUpon>RemoveUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="rptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptForm.Designer.cs">
+      <DependentUpon>rptForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SecurityLauncher.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SecurityLauncher.Designer.cs">
       <DependentUpon>SecurityLauncher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolCheckerDataSet.cs">
+      <DependentUpon>ToolCheckerDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ToolCheckerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -137,6 +154,9 @@
     <EmbeddedResource Include="CheckInTool.resx">
       <DependentUpon>CheckInTool.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="empRpt.resx">
+      <DependentUpon>empRpt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EquipmentLauncher.resx">
       <DependentUpon>EquipmentLauncher.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MaintenanceLauncher.resx">
       <DependentUpon>MaintenanceLauncher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptForm.resx">
+      <DependentUpon>rptForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
